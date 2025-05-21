@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="527.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bot.chatbot.ChatController">
+    <!-- Список сообщений -->
+    <ListView fx:id="messageListView" style="-fx-background-color: transparent; -fx-padding: 5;"
+              AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="30.0" />
+
+    <!-- Панель ввода сообщения -->
+    <HBox layoutY="412.0" spacing="5" style="-fx-padding: 5; -fx-background-color: #f0f0f0;"
+          AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <TextArea fx:id="inputTextArea" prefHeight="50" prefWidth="300"
+                  promptText="Введите сообщение..." wrapText="true" />
+        <Button onMouseClicked="#handleSendButton" prefHeight="50.0"
+                prefWidth="107.0" text="Отправить" />
+    </HBox>
+
+    <!-- Меню -->
+    <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem fx:id="clearChatMenuItem" mnemonicParsing="false" text="Очистить чат" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+</AnchorPane>
