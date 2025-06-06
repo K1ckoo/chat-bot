@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 public class ChatBotLogic implements IBot {
     private static final String HISTORY_DIR = "user_histories"; // Директория для хранения истории
     private static final String CURRENCY_API_URL = "https://api.exchangerate-api.com/v4/latest/USD"; // API курсов валют
-    private static final String API_KEY = "ваш_api_ключ"; // Ключ API
+    private static final String API_KEY = ""; // Ключ API
 
     // Популярные валюты для отображения
     private static final String[] POPULAR_CURRENCIES = {
